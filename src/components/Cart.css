@@ -1,0 +1,5 @@
+.image-container {
+    max-width: 5rem;
+    max-height: 2rem;
+    object-fit: cover;
+  }

@@ -1,0 +1,28 @@
+.search {
+    display: flex;
+    
+    /* position: relative; */
+    /* left: 4rem; */
+    align-items: center;
+    justify-content: center;
+  }
+
+.search-mobile {
+    display: block !important;
+  }
+  
+  .search-desktop {
+    display: none !important;
+  }
+
+@media screen and (min-width: 774px) {
+    
+    .search-mobile {
+      display: none !important;
+    }
+    .search-desktop {
+      display: block !important;
+      min-width: 20rem;
+      
+    }
+  }

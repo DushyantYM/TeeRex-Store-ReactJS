@@ -1,0 +1,48 @@
+.search-bar {
+    display: block;
+  
+
+}
+.filter-section {
+    margin: 1rem;
+
+}
+.filter-panel {
+    display: block ;
+}
+.filter-btn {
+    margin: 1rem;
+    display: none ;
+}
+
+@media only screen and ( max-width : 774px) {
+
+    /* .filter-panel {
+        display: none ;
+    } */
+   
+        .css-5w4cce {
+            display: block;
+        }
+
+        .filter-panel {
+            display: none !important ;
+        }
+
+
+    
+
+    .filter-btn {
+        display: block;
+    }
+  
+}
+@media (max-width: 774px )
+{
+
+    .css-5w4cce {
+        display: block !important;
+    }
+
+}
+

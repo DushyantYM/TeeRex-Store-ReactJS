@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import LandingPage from "./components/LandingPage"
+import { Routes , BrowserRouter, Route } from "react-router-dom";
+import Cart from "./components/Cart"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export const config = {
+
+  endpoint : `https://geektrust.s3.ap-southeast-1.amazonaws.com/coding-problems/shopping-cart/catalogue.json`
 }
 
-export default App;
+
+const App = () => {
+  return (
+   
+       <Routes>
+
+        
+          <Route exact path="/" element={<LandingPage />} />
+          <Route exact path="/cart" element={<Cart />} />
+
+      </Routes>
+      
+  
+  )
+}
+
+export default App
